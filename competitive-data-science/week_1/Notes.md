@@ -1,4 +1,4 @@
-# Week 1 notes
+# Notes: Week 1
 
 ### 1. Recap of main ML algorithms
 
