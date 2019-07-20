@@ -135,6 +135,6 @@
 
 #### Extracting features from Images with CNNs
 *(covered in details in later lessons)*
-    - finetuning or transfer-learning
-    - data augmentation
+- finetuning or transfer-learning
+- data augmentation
 
