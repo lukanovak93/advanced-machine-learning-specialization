@@ -10,13 +10,16 @@
     - <a href="https://www.codecogs.com/eqnedit.php?latex=y_i" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y_i" title="y_i" /></a> - target for i-th object
 
 ##### 1. Regression metrics
-- Mean Squared Error (MSE):
+- Mean Squared Error (MSE):  
+
     - <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;MSE&space;=&space;\frac{1}{N}&space;\sum_{i=1}^{N}(y_i&space;-&space;\hat{y_i})^2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;MSE&space;=&space;\frac{1}{N}&space;\sum_{i=1}^{N}(y_i&space;-&space;\hat{y_i})^2" title="MSE = \frac{1}{N} \sum_{i=1}^{N}(y_i - \hat{y_i})^2" /></a>
     - best constant target prediction: target mean
-- Root Mean Squared Error (RMSE):
+- Root Mean Squared Error (RMSE):  
+
     - <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\sqrt{MSE}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\sqrt{MSE}" title="\sqrt{MSE}" /></a>
     - <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;R^2&space;=&space;1&space;-&space;\frac{MSE}{\frac{1}{N}\sum_{i=1}^{N}(y_i&space;-&space;\bar{y})^2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;R^2&space;=&space;1&space;-&space;\frac{MSE}{\frac{1}{N}\sum_{i=1}^{N}(y_i&space;-&space;\bar{y})^2}" title="R^2 = 1 - \frac{MSE}{\frac{1}{N}\sum_{i=1}^{N}(y_i - \bar{y})^2}" /></a>
-- Mean Absolute Error (MAE):
+- Mean Absolute Error (MAE):  
+
     - <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;MAE&space;=&space;\frac{1}{N}\sum_{i=1}^{N}&space;|&space;y_i&space;-&space;\hat{y_i}&space;|" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;MAE&space;=&space;\frac{1}{N}\sum_{i=1}^{N}&space;|&space;y_i&space;-&space;\hat{y_i}&space;|" title="MAE = \frac{1}{N}\sum_{i=1}^{N} | y_i - \hat{y_i} |" /></a>
     - less sensitive of outliers then MSE
     - widely used in finance
