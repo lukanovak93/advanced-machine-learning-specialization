@@ -5,8 +5,7 @@
 ##### 1. Regression metrics
 
 - Notation:  
-    - <a href="https://www.codecogs.com/eqnedit.php?latex=N" target="_blank"><img src="https://latex.codecogs.com/gif.latex?N" title="N" /></a>
- - number of objects
+    - <a href="https://www.codecogs.com/eqnedit.php?latex=N" target="_blank"><img src="https://latex.codecogs.com/gif.latex?N" title="N" /></a> - number of objects
     - <a href="https://www.codecogs.com/eqnedit.php?latex=y&space;\in&space;\R^N" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y&space;\in&space;\R^N" title="y \in \R^N" /></a> - target values (ground truth)
     - <a href="https://www.codecogs.com/eqnedit.php?latex=\hat{y}&space;\in&space;\R^N" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\hat{y}&space;\in&space;\R^N" title="\hat{y} \in \R^N" /></a> - predictions
     - <a href="https://www.codecogs.com/eqnedit.php?latex=\hat{y_i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\hat{y_i}" title="\hat{y_i}" /></a> - prediction for i-th object
@@ -75,8 +74,7 @@
 
 #### 2. Classification metrics
 - Notation:  
-    - <a href="https://www.codecogs.com/eqnedit.php?latex=N" target="_blank"><img src="https://latex.codecogs.com/gif.latex?N" title="N" /></a>
- - number of objects
+    - <a href="https://www.codecogs.com/eqnedit.php?latex=N" target="_blank"><img src="https://latex.codecogs.com/gif.latex?N" title="N" /></a> - number of objects
  - <a href="https://www.codecogs.com/eqnedit.php?latex=L" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L" title="L" /></a>
  - number of classes
     - <a href="https://www.codecogs.com/eqnedit.php?latex=y&space;\in&space;\R^N" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y&space;\in&space;\R^N" title="y \in \R^N" /></a> - target values (ground truth)
