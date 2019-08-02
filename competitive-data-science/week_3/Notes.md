@@ -2,25 +2,26 @@
 
 ### 1. Evaluation metrics
 - Notation:  
-    - $N$ - number of objects
-    - $y \in \R^N$ - target values
-    - $\hat{y} \in \R^N$ - predictions
-    - $\hat{y_i}$ - prediction for i-th object
-    - $y_i$ - target for i-th object
+    - <a href="https://www.codecogs.com/eqnedit.php?latex=N" target="_blank"><img src="https://latex.codecogs.com/gif.latex?N" title="N" /></a>
+ - number of objects
+    - <a href="https://www.codecogs.com/eqnedit.php?latex=y&space;\in&space;\R^N" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y&space;\in&space;\R^N" title="y \in \R^N" /></a> - target values
+    - <a href="https://www.codecogs.com/eqnedit.php?latex=\hat{y}&space;\in&space;\R^N" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\hat{y}&space;\in&space;\R^N" title="\hat{y} \in \R^N" /></a> - predictions
+    - <a href="https://www.codecogs.com/eqnedit.php?latex=\hat{y_i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\hat{y_i}" title="\hat{y_i}" /></a> - prediction for i-th object
+    - <a href="https://www.codecogs.com/eqnedit.php?latex=y_i" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y_i" title="y_i" /></a> - target for i-th object
 
 ##### 1. Regression metrics
 - Mean Squared Error (MSE):
-    - $MSE = \frac{1}{N} \sum_{i=1}^{N}(y_i - \hat{y_i})^2$
+    - <a href="https://www.codecogs.com/eqnedit.php?latex=MSE&space;=&space;\frac{1}{N}&space;\sum_{i=1}^{N}(y_i&space;-&space;\hat{y_i})^2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?MSE&space;=&space;\frac{1}{N}&space;\sum_{i=1}^{N}(y_i&space;-&space;\hat{y_i})^2" title="MSE = \frac{1}{N} \sum_{i=1}^{N}(y_i - \hat{y_i})^2" /></a>
     - best constant target prediction: target mean
 - Root Mean Squared Error (RMSE):
-    - $\sqrt{MSE}$
-    - $R^2 = 1 - \frac{MSE}{\frac{1}{N}\sum_{i=1}^{N}(y_i - \bar{y})^2}$
+    - <a href="https://www.codecogs.com/eqnedit.php?latex=\sqrt{MSE}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sqrt{MSE}" title="\sqrt{MSE}" /></a>
+    - <a href="https://www.codecogs.com/eqnedit.php?latex=R^2&space;=&space;1&space;-&space;\frac{MSE}{\frac{1}{N}\sum_{i=1}^{N}(y_i&space;-&space;\bar{y})^2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?R^2&space;=&space;1&space;-&space;\frac{MSE}{\frac{1}{N}\sum_{i=1}^{N}(y_i&space;-&space;\bar{y})^2}" title="R^2 = 1 - \frac{MSE}{\frac{1}{N}\sum_{i=1}^{N}(y_i - \bar{y})^2}" /></a>
 - Mean Absolute Error (MAE):
-    - $MAE = \frac{1}{N}\sum_{i=1}^{N} | y_i - \hat{y_i} |$
+    - <a href="https://www.codecogs.com/eqnedit.php?latex=MAE&space;=&space;\frac{1}{N}\sum_{i=1}^{N}&space;|&space;y_i&space;-&space;\hat{y_i}&space;|" target="_blank"><img src="https://latex.codecogs.com/gif.latex?MAE&space;=&space;\frac{1}{N}\sum_{i=1}^{N}&space;|&space;y_i&space;-&space;\hat{y_i}&space;|" title="MAE = \frac{1}{N}\sum_{i=1}^{N} | y_i - \hat{y_i} |" /></a>
     - less sensitive of outliers then MSE
     - widely used in finance
     - best constant target prediction: target median
-    - gradient = 0 when the prediction is perfect ($\hat{y_i} - y_i$)
+    - gradient = 0 when the prediction is perfect (<a href="https://www.codecogs.com/eqnedit.php?latex=\hat{y_i}&space;-&space;y_i&space;=&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\hat{y_i}&space;-&space;y_i&space;=&space;0" title="\hat{y_i} - y_i = 0" /></a>)
 
 ### 2. Mean encodings
 
