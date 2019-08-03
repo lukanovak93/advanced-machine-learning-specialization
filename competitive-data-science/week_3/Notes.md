@@ -73,10 +73,10 @@
         - test set - transform predictions back (<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\hat{y_i}&space;=&space;exp(\hat{z_i})&space;-&space;1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\hat{y_i}&space;=&space;exp(\hat{z_i})&space;-&space;1" title="\hat{y_i} = exp(\hat{z_i}) - 1" /></a>)
 
 #### 2. Classification metrics
+- good explanation [here](http://queirozf.com/entries/evaluation-metrics-for-classification-quick-examples-references)
 - Notation:  
     - <a href="https://www.codecogs.com/eqnedit.php?latex=N" target="_blank"><img src="https://latex.codecogs.com/gif.latex?N" title="N" /></a> - number of objects
- - <a href="https://www.codecogs.com/eqnedit.php?latex=L" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L" title="L" /></a>
- - number of classes
+    - <a href="https://www.codecogs.com/eqnedit.php?latex=L" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L" title="L" /></a> - number of classes
     - <a href="https://www.codecogs.com/eqnedit.php?latex=y&space;\in&space;\R^N" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y&space;\in&space;\R^N" title="y \in \R^N" /></a> - target values (ground truth)
     - <a href="https://www.codecogs.com/eqnedit.php?latex=\hat{y}&space;\in&space;\R^N" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\hat{y}&space;\in&space;\R^N" title="\hat{y} \in \R^N" /></a> - predictions
     <a href="https://www.codecogs.com/eqnedit.php?latex=[a=b]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?[a=b]" title="[a=b]" /></a> - indicator function
