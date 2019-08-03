@@ -140,6 +140,60 @@
         - set the model to optimize any loss function it can optimize
         - monitor the performance (quality of predictions) on the desired metric
         - stop the training when model starts to overfit the **desired metric** (not the one that the mdel itself is actually optimizing)
+
 ### 2. Mean encodings
+- [CatBoost](https://github.com/catboost/catboost) library - Gradient boosting on decision trees (supports GPU as well as CPU computations)
+- using target to generate features
+- ways of using the target variable to compute useful features:
+    - notation:
+        - `Goods` - number of `1`s (in target column) in the group
+        - `Bads` - number of `0`s (in target column) in the group
+    - <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;likelihood&space;=&space;\frac{Goods}{Goods&space;&plus;&space;Bads}&space;=&space;mean(target)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;likelihood&space;=&space;\frac{Goods}{Goods&space;&plus;&space;Bads}&space;=&space;mean(target)" title="likelihood = \frac{Goods}{Goods + Bads} = mean(target)" /></a>
+    - <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;weight&space;of&space;Evidence=&space;ln(\frac{Goods}{Bads})&space;*&space;100" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;weight&space;of&space;Evidence=&space;ln(\frac{Goods}{Bads})&space;*&space;100" title="weight of Evidence= ln(\frac{Goods}{Bads}) * 100" /></a>
+    - sum of `Goods` in the target column for a group
+    - diff - `Goods - Bads`
+- advantages:
+    - compact transformations of categorical variables
+    - powerful basis for feature engineering
+- disadvantages:
+    - need careful validation as there is a lot of ways to overfit
+    - significant improvements only on specific datasets
 
-
+#### Regularization
+- CV loop:
+    - robust and intuitive
+    - 4 or 5 folds are usually enough to get decent results
+    - careful with extreme situations like leave one out
+- Smoothing:
+    - if a group has a lot of samples - we can trust estimated encoding, and reverse otherwise
+    - <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\frac{mean(target)*&space;n_{rows}\&space;&plus;\&space;globalmean*\alpha}{n_{rows}\&space;&plus;\&space;\alpha}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\frac{mean(target)*&space;n_{rows}\&space;&plus;\&space;globalmean*\alpha}{n_{rows}\&space;&plus;\&space;\alpha}" title="\frac{mean(target)* n_{rows}\ +\ globalmean*\alpha}{n_{rows}\ +\ \alpha}" /></a>
+    - alpha controls the amount of regularization
+    - only works with some other regularization method
+- Adding noise:
+    - degrades the quality of encoding
+    - unstable - how much noise? (too much &rarr; feature unusable, too little &rarr; worse regularization)
+    - usually used with leave one out (LOO) - neads some hyperparameters tuning &rarr; do not use if there is no time
+- Expanding mean
+    - idea:
+        - fix some sorting of the data
+        - use only the rows from `0` to `n-1` to calculate encoding for row `n`
+    - least amount of leakage
+    - no hyperparameters
+    - irregular encoding quality &rarr; bad
+- Generalizations and practical examples
+    - for pratical use: CV loops and expanding mean
+    - regression - median, percentiles, std, distribution bins (regularize all these features)
+    - milticlass classification - introducing new information
+    - many-to-many relations - statistics on vectors (users-apps example)
+    - timeseries - rolling statistics of target variable
+    - **Correct validation**:
+        - local experiments:
+            - estimate encodings  on X_train
+            - map encodings to X_train and X_validation
+            - regularize on X_train
+            - validate model on X_train/X_validation split
+        - submission:
+            - estimate encodings on all train data
+            - map them to train and test
+            - regularize on train set
+            - fit on train set
