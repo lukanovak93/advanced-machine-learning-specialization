@@ -1,6 +1,6 @@
 # Bayesian Methods for Machine Learning course
 
-Third course of the specialization [Advanced Machine Learning](https://www.coursera.org/specializations/aml?). The Course itself can be found [here](https://www.coursera.org/learn/intro-to-deep-learning?specialization=aml). Tasks and utility functions can be found on [official course repository](https://github.com/hse-aml/bayesian-methods-for-ml).
+Third course of the [Advanced Machine Learning Specialization](https://www.coursera.org/specializations/aml?). The Course itself can be found [here](https://www.coursera.org/learn/intro-to-deep-learning?specialization=aml). Tasks and utility functions can be found on [official course repository](https://github.com/hse-aml/bayesian-methods-for-ml).
 
 ## Description
 People apply Bayesian methods in many areas: from game development to drug discovery. They give superpowers to many machine learning algorithms: handling missing data, extracting much more information from small datasets. Bayesian methods also allow us to estimate uncertainty in predictions, which is a desirable feature for fields like medicine. 
