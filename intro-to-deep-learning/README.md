@@ -1,10 +1,11 @@
-# Introduction to Deep Learning
+# Materials for "Introduction to Deep Learning" course
+*by National Research University Higher School of Economics*
 
 First course of the specialization [Advanced Machine Learning](https://www.coursera.org/specializations/aml?).
 
 :books: [Course](https://www.coursera.org/learn/intro-to-deep-learning?specialization=aml)
 
-:file_folder: [Official course repository](https://github.com/hse-aml/intro-to-dl)
+:octopus: [Official course repository](https://github.com/hse-aml/intro-to-dl)
 
 ## Description
 The goal of this course is to give learners basic understanding of modern neural networks and their applications in computer vision and natural language understanding. The course starts with a recap of linear models and discussion of stochastic optimization methods that are crucial for training deep neural networks. Learners will study all popular building blocks of neural networks including fully connected layers, convolutional and recurrent layers. 
