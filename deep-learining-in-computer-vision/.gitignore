@@ -1,0 +1,12 @@
+# Global
+.ipynb_checkpoints
+*.png
+*.pickle
+
+# Week 1
+week1/faces_imgs
+week1/plates
+
+# Week 2
+week2/data
+week2/get_data.pyc
