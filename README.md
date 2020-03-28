@@ -12,3 +12,18 @@ Resources and solved tasks for [Advanced Machine Learning](https://www.coursera.
 - Course: [Coursera](https://www.coursera.org/learn/competitive-data-science?specialization=aml)
 - Resources: [Repository](https://github.com/hse-aml/competitive-data-science)
 - Solved tasks and submissions: [competitive-data-science](competitive-data-science)
+
+### Couse 3: Bayesian Methods for Machine Learning
+- Course: [Coursera](https://www.coursera.org/learn/bayesian-methods-in-machine-learning)
+- Resources: [Repository](https://github.com/hse-aml/bayesian-methods-for-ml)
+- Solved tasks and submissions: [bayesian-methods-for-ml](bayesian-methods-for-ml)
+
+### Couse 4: Practical Reinforcement Learning
+- Course: [Coursera](https://www.coursera.org/learn/practical-rl)
+- Resources: [Repository](https://github.com/yandexdataschool/Practical_RL/tree/coursera)
+- Solved tasks and submissions: [practical-reinforcement-learning](practical-reinforcement-learning)
+
+### Couse 5: Deep Learning in Computer Vision
+- Course: [Coursera](https://www.coursera.org/learn/deep-learning-in-computer-vision)
+- Resources: N/A
+- Solved tasks and submissions: [deep-learning-in-computer-vision](deep-learning-in-computer-vision)
