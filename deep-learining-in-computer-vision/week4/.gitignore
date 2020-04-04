@@ -1,0 +1,5 @@
+Face_Recognition_data
+__pycache__
+.ipynb_checkpoints
+face_recognition_model.h5
+
