@@ -1,0 +1,4 @@
+__pycache__
+.ipynb_checkpoints
+*.csv
+sample_submission.csv.gz
